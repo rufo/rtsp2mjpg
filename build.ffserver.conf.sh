@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF > ffserver.conf
+cat << EOF > /etc/ffserver.conf
 HTTPPort $PORT
 HTTPBindAddress 0.0.0.0
 MaxHTTPConnections 2000

@@ -4,7 +4,6 @@ RUN apk add curl bash ffmpeg && \
 COPY stream.sh /usr/bin/stream.sh
 RUN chmod +x /usr/bin/stream.sh
 RUN build.ffserver.conf.sh
-COPY ffserver.conf /etc/ffserver.conf
 ENV RTSP_URL rtsp://192.168.222.170:8554/unicast
 ENV FFMPEG_INPUT_OPTS  ""
 ENV FFMPEG_OUTPUT_OPTS  ""
